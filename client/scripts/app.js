@@ -25,6 +25,7 @@ var App = {
       for (var i = 0; i < results.length; i++) {
         MessagesView.renderMessage(results[i]);
       }
+      RoomsView.render(data);
       callback();
     });
   },

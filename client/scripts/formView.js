@@ -11,7 +11,7 @@ var FormView = {
     event.preventDefault();
     var newMessage = {};
     newMessage.text = $('#message').val();
-    newMessage.roomname = "undefined";
+    newMessage.roomname = $('select').val();
     newMessage.username = App.username;
 
     Parse.create(newMessage);
