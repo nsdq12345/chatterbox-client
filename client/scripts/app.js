@@ -15,6 +15,7 @@ var App = {
     App.startSpinner();
     App.fetch(App.stopSpinner);
     MessagesView.render();
+    // MessagesView.renderv2();
   },
 
   fetch: function(callback = ()=>{}) {
