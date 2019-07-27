@@ -5,7 +5,7 @@ var RoomsView = {
   $rooms: $('#rooms'),
 
   initialize: function() {
-    this.$rooms.on('click', Rooms.add);
+    $('#rooms').on('click','button.addRoom',Rooms.add);
   },
 
   render: function() {

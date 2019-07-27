@@ -3,11 +3,10 @@ var MessageView = {
   render: _.template(`
 
       <div class="chat">
-        <div class="username"><%= username %></div>
+        <button class="username"><%= username %></button>
         <div><%= roomname %></div>
         <%= text %>
       </div>
-
     `)
 
 };
